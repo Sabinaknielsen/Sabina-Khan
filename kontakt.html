@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/letter-s.png" />
+  </head>
+  <body>
+    <header>
+      <section class="top-nav">
+        <a href="index.html" class="logo-container">
+          <img src="icons/letter-s.png" alt="Logo" class="logo" />
+        </a>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <nav>
+          <ul class="menu">
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="projekter.html">Projekter</a></li>
+            <li><a href="ommig.html">Om mig</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+        <section class="kontakt">
+      <div class="container">
+        <h2>Kontaktformular </h2>
+        <form action="process.php" method="post">
+          <div class="form-group">
+            <label for="name">Navn:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefonnummer:</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+          <div class="form-group">
+            <label for="message">Besked:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button id="send" type="submit">Send</button>
+        </form>
+      </div>
+      <div class="kontakt1">
+          <img src="img/mig.JPG" alt="">
+          <h2>Velkommen til min portfolio!</h2>
+          <p> Jeg er en engageret multimediedesigner klar til at tage nye udfordringer op.  Har du spørgsmål eller ønsker at samarbejde? <br> <br>Udfyld formularen her på siden, så vender jeg tilbage til dig snarest muligt. <br><br> Jeg ser frem til at høre fra dig!</p>
+      </div>
+    </section>
+    </main>
+    <footer>
+        <div class="footer-content"> 
+          <div class="footer_2">
+            <a href="https://www.facebook.com/morgenfreeman01/"><img src="icons/iconsfacebook-30.png" alt="Logo" /></a>
+            <a href="https://www.linkedin.com/in/sabinakhannielsen/">  <img src="icons/icons8-linkedin-30.png" alt="Logo" /></a>
+     
+          <div class="footer_1">
+            <p>
+              Sabina Khan Nielsen <br />
+              © Copyright Plan.
+            </p>
+          </div>
+      </footer>
+  </body>
+</html>
